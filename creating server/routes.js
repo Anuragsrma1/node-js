@@ -12,6 +12,8 @@ const body = [];
           if(err){
             console.log(err);
           }
+
+          
           console.log(`data from file` + ' ' +Data);
           res.write('<html');
           res.write('<head><title>Enter message</title></head>');
@@ -55,14 +57,14 @@ const body = [];
 
 }
 
-// module.exports = requestHandler; 
+module.exports = requestHandler; 
 
 // module.exports = {
 //     handler : requestHandler,
 //     sometext : 'some Hard Coded Text'
 // };
 
-module.exports.handler = requestHandler;
-module.exports.sometext = 'some Hard Coded Text';
+// module.exports.handler = requestHandler;
+// module.exports.sometext = 'some Hard Coded Text';
 
 
